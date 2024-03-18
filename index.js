@@ -10,7 +10,7 @@ app.get('/', (req, res) =>{
 
 
 app.post('/process_array', (req, res) => {
-    const { array } = req.body;
+    const { array } = req.body.params;
 
     // Initialize response variables
     const status = "Success";

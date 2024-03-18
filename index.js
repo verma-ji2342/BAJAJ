@@ -8,6 +8,10 @@ app.get('/', (req, res) =>{
   res.send('Hello World!');
 })
 
+app.get('/process_array', (req, res) => {
+  const { array } = req.body.params;
+  console.log(array);
+}
 
 app.post('/process_array', (req, res) => {
     const { array } = req.body.params;
